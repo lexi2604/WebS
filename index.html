@@ -28,10 +28,10 @@
                 "name": "Sydney Opera House",
                 "city": "Sydney"
             },
-        {
+            {
                 "id": "5",
-                "name": "Cluj",
-                "city": "Sydney"
+                "name": "Cluj Arena",
+                "city": "Cluj-Napoca"
             }
         ],
         "concerts": [
@@ -69,55 +69,5 @@
 </head>
 <body>
     <h1>Coldplay Tour Dates</h1>
-
-    <!-- Buton pentru încărcarea și afișarea datelor concertelor din JSON-LD -->
-    <button onclick="fetchAndDisplayData()">Încarcă Datele Concertelor</button>
-
-    <!-- Tabel pentru afișarea locațiilor -->
-    <h2>Locații Disponibile</h2>
-    <table id="locationsTable">
-        <thead>
-            <tr>
-                <th>ID Locație</th>
-                <th>Nume Locație</th>
-                <th>Oraș</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Rândurile vor fi populate dinamic de scriptul JavaScript -->
-        </tbody>
-    </table>
-
-    <!-- Tabel pentru afișarea concertelor -->
-    <h2>Concerte</h2>
-    <table id="concertsTable">
-        <thead>
-            <tr>
-                <th>ID Concert</th>
-                <th>Nume Concert</th>
-                <th>Data Concertului</th>
-                <th>ID Locație</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Rândurile vor fi populate dinamic de scriptul JavaScript -->
-        </tbody>
-    </table>
-
-    <!-- Formular pentru adăugarea unui nou concert -->
-    <h3>Adaugă un nou concert</h3>
-    <form id="newConcertForm" onsubmit="addNewConcert(event)">
-        <label for="concertName">Nume Concert:</label>
-        <input type="text" id="concertName" name="concertName" required><br>
-        <label for="concertDate">Data Concertului:</label>
-        <input type="date" id="concertDate" name="concertDate" required><br>
-        <label for="locationId">Selectează Locația:</label>
-        <select id="locationId" name="locationId" required>
-            <!-- Opțiunile vor fi populate dinamic de scriptul JavaScript -->
-        </select><br>
-        <input type="submit" value="Adaugă Concert">
-    </form>
-
-    <script src="script.js"></script>
 </body>
 </html>

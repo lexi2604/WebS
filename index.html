@@ -4,66 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coldplay Tour Dates</title>
-    <link rel="stylesheet" href="style.css">
     <script type="application/ld+json">
-    {
-        "locations": [
+        [
             {
-                "id": "1",
-                "name": "Madison Square Garden",
-                "city": "New York City"
-            },
-            {
-                "id": "2",
-                "name": "The O2 Arena",
-                "city": "London"
-            },
-            {
-                "id": "3",
-                "name": "Tokyo Dome",
-                "city": "Tokyo"
-            },
-            {
-                "id": "4",
-                "name": "Sydney Opera House",
-                "city": "Sydney"
-            },
-            {
-                "id": "5",
-                "name": "Cluj Arena",
-                "city": "Cluj-Napoca"
-            }
-        ],
-        "concerts": [
-            {
-                "id": "1",
+                "@context": "https://schema.org",
+                "@type": "MusicEvent",
                 "name": "Coldplay Live in New York",
-                "date": "2024-05-15",
-                "locationId": "1"
+                "startDate": "2024-05-15",
+                "location": {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "New York City",
+                        "addressCountry": "USA"
+                    }
+                }
             },
             {
-                "id": "2",
+                "@context": "https://schema.org",
+                "@type": "MusicEvent",
                 "name": "Coldplay Live in London",
-                "date": "2024-06-20",
-                "locationId": "2"
+                "startDate": "2024-06-20",
+                "location": {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "London",
+                        "addressCountry": "UK"
+                    }
+                }
             },
             {
-                "id": "3",
+                "@context": "https://schema.org",
+                "@type": "MusicEvent",
                 "name": "Coldplay Live in Tokyo",
-                "date": "2024-07-05",
-                "locationId": "3"
+                "startDate": "2024-07-05",
+                "location": {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Tokyo",
+                        "addressCountry": "Japan"
+                    }
+                }
             },
             {
-                "id": "4",
+                "@context": "https://schema.org",
+                "@type": "MusicEvent",
                 "name": "Coldplay Live in Sydney",
-                "date": "2024-08-10",
-                "locationId": "4"
+                "startDate": "2024-08-10",
+                "location": {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Sydney",
+                        "addressCountry": "Australia"
+                    }
+                }
             }
         ]
-    }
     </script>
 </head>
 <body>
     <h1>Coldplay Tour Dates</h1>
+    <ul>
+        <li>
+            <h2>Coldplay Live in New York</h2>
+            <p>Locație: New York City, USA</p>
+            <p>Date: 15 mai 2024</p>
+        </li>
+        <li>
+            <h2>Coldplay Live in London</h2>
+            <p>Locație: London, UK</p>
+            <p>Date: 20 iunie 2024</p>
+        </li>
+        <li>
+            <h2>Coldplay Live in Tokyo</h2>
+            <p>Locație: Tokyo, Japan</p>
+            <p>Date: 5 iulie 2024</p>
+        </li>
+        <li>
+            <h2>Coldplay Live in Sydney</h2>
+            <p>Locație: Sydney, Australia</p>
+            <p>Date: 10 august 2024</p>
+        </li>
+    </ul>
 </body>
 </html>
